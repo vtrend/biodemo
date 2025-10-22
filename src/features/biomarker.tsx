@@ -13,7 +13,7 @@ const BiomarkerComponent = () => {
   const { selected } = useSearch({ from: '/biomarker' });
   const navigate = useNavigate();
 
-  const parsedData = schema.safeParse(biomarkersQuery);
+  const parsedData = schema.safeParse(biomarkersQuery.data);
   if (!parsedData.success) {
     throw new Error(parsedData.error.message);
   }

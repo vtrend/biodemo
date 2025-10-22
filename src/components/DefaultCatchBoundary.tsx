@@ -9,7 +9,7 @@ const DefaultCatchBoundary = ({ error }: ErrorComponentProps) => {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-      <ErrorComponent error={error} />
+      {/* <ErrorComponent error={error} />  DO NOT SHOW IN PROD */}
       <div className="w-full max-w-3xl bg-white shadow-xl rounded-2xl my-4  text-center pb-4">
         <div className="flex">
           <button
